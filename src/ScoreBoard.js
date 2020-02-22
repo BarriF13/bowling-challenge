@@ -1,11 +1,18 @@
 //main file
 'use strict';
 
-function ScoreBoard(){
-this.FRAMES = 10;
+var ScoreBoard = function(){
+// this.FRAMES = 10;
+
+};
+
+// ScoreBoard.prototype.frames = function(){
+//  return this.FRAMES;
+// };
+
+ScoreBoard.prototype.roll = function(pins){
 
 }
-
-ScoreBoard.prototype.frames = function(){
- return this.FRAMES;
+ScoreBoard.prototype.score = function(){
+  return 0;
 };
