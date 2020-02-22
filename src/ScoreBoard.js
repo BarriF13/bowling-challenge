@@ -2,17 +2,18 @@
 'use strict';
 
 var ScoreBoard = function(){
-// this.FRAMES = 10;
 
+    this.rolls = [];
 };
 
-// ScoreBoard.prototype.frames = function(){
-//  return this.FRAMES;
-// };
-
 ScoreBoard.prototype.roll = function(pins){
+  this.rolls.push(pins);
 
-}
+};
 ScoreBoard.prototype.score = function(){
-  return 0;
+  var result =  0;
+  for(var i = 0 ; i <20 ; i++){
+    result += this.rolls[i];
+  }
+  return result;
 };
